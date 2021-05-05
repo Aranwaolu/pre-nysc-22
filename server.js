@@ -1,4 +1,7 @@
 const express = require("express");
+
+const { writeUserData, readUserData } = require("./firebase");
+
 const fs = require("fs");
 
 const PORT = process.env.PORT || 7000;
@@ -17,8 +20,14 @@ server.get("/", (req, res) => {
   });
 });
 
+server.post("/send", (req, res) => {
+    console.log(req, 'request');
+    console.log(res, 'response');
+})
+
 server.on("connection", () => console.log("server is connected"));
 
 server.listen(PORT, () =>
   console.log(`server is running on http://localhost:${PORT}`)
 );
+readUserData()
