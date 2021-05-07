@@ -46,13 +46,29 @@
 
 .about {
   display: flex;
-  margin-top: 100px;
+  margin-top: 64px;
   align-items: center;
+  padding-right: 0 !important;
 }
 @media screen and (max-width: 1024px) {
   .about {
     flex-direction: column;
     margin-top: 40px;
+    padding-right: 70px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about {
+    padding-right: 24px !important;
+  }
+}
+.about-text {
+  margin-right: 90px;
+}
+@media screen and (max-width: 700px) {
+  .about-text {
+    margin-right: 24px;
+    margin-bottom: 40px;
   }
 }
 .about-text h3 {
@@ -86,6 +102,9 @@
   .about-img {
     min-width: 100%;
   }
+}
+.about-img img {
+  margin-bottom: -6px;
 }
 img {
   width: 100%;
@@ -149,7 +168,7 @@ img {
 }
 @media screen and (max-width: 700px) {
   .footnote {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 }
 .footnote-box {
