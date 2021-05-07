@@ -36,16 +36,18 @@ $(function () {
   }
 
   /* global variables */
-  const today = new Date();
-  const eventDate = new Date("2020/08/09");
-  const daysToGo = DifferenceInDays(today, eventDate);
+  // const today = new Date();
+  // const eventDate = new Date("2020/08/09");
+  // const daysToGo = DifferenceInDays(today, eventDate);
   const button = $(".create-dp");
   const fileInput = $("input[type=file]");
   const preview = $("img");
   const changebtn = $(".change");
   const fileInpbtn = $(".fileinput-button");
   const main = $("main");
+  const svgs = $(".svgs");
   const mainContent = main.innerHTML;
+  const svgContent = svgs.innerHTML;
 
   // var queryName = getUrlParameter("name");
   // var requestKey = getUrlParameter("requestKey");
@@ -80,9 +82,9 @@ $(function () {
     button.attr("disabled", "disabled").html("...processing");
 
     // x, y, width, height
-    const picData = [315, 174, 459, 513];
+    const picData = [78.3, 248.9, 511.7, 516.7];
     // name, y, x
-    const nameData = [`- ${username}`, 868, 331, testimony];
+    const nameData = [`${username}`, 381, 626, testimony];
     // const nameData = [username + ",", 1295, 685, ministryName];
 
     createDP(username, imageData, picData, nameData, function (url) {
@@ -97,7 +99,7 @@ $(function () {
             <div class="img-dp">
               <img id="dp_result" src=${url} title="Your DP"/>
               <br>
-              <a class="download-dp" href="${url}" download="SS_DP_${username.replace(/\./g, "")}">Download Image</a>
+              <a class="download-dp" href="${url}" download="PN21_DP_${username.replace(/\./g, "")}">Download Image</a>
               <br>
             </div>
             
@@ -212,7 +214,7 @@ $(function () {
       };
 
     var userImg = loadImage(imageUrl);
-    var frameImg = loadImage("./src/img/firstFrame.jpg");
+    var frameImg = loadImage("./src/img/firstFrame.png");
 
     function loadImage(src) {
       var img = new Image();
@@ -237,17 +239,17 @@ $(function () {
 
       //Write user name
       ctx.textBaseline = "top";
-      ctx.textAlign = "center";
-      ctx.font = "63px Autography";
-      ctx.fillStyle = "#fd6003";
+      ctx.textAlign = "left";
+      ctx.font = "44px Ubuntu-Bold";
+      ctx.fillStyle = "#ca0808";
       var canvasText = name[0];
-      ctx.fillText(canvasText, name[2] + 209, name[1]);
+      ctx.fillText(canvasText, name[2], name[1]);
       // ctx.renderText(name[3], name[2], name[1], 1);
 
       //Write testimony
-      ctx.font = "38px Poppins-SemiBold";
-      ctx.fillStyle = "#060c12";
-      wrapText(ctx, name[3], 540, 709, 30, 50, 0);
+      // ctx.font = "38px Poppins-SemiBold";
+      // ctx.fillStyle = "#060c12";
+      // wrapText(ctx, name[3], 540, 709, 30, 50, 0);
 
       cb(canvas.toDataURL("image/jpeg", 1.0));
     }
@@ -320,10 +322,12 @@ $(function () {
       case "yourdp":
         main.html(temp);
         main.css({ background: "none" });
+        svgs.html("");
         break;
       default:
         main.style.background = "rgb(108, 86, 123)";
         main.innerHTML = mainContent;
+        svgs.innerHTML = svgContent;
     }
   }
   console.log("DOM fully loaded and parsed");
