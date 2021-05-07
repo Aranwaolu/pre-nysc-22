@@ -391,6 +391,10 @@ img {
   background: none;
   border: none;
 }
+.mobile-nav-btn:focus {
+  outline: none;
+}
+
 .mobile-span {
   width: 35px;
   height: 3px;
@@ -440,4 +444,5 @@ img {
 .show {
   width: 30vw;
   height: 30vh;
+  box-shadow: 3px 6px 12px 10px #c1b5b5;
 }
