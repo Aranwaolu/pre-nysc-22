@@ -11,7 +11,7 @@ body {
   font-size: 100%;
   color: #000;
   color: rgb(0, 0, 0);
-  font-family: "FuturaBTMedium", sans-serif;
+  font-family: "TTCommons-Regular", sans-serif;
 }
 
 * {
@@ -351,9 +351,9 @@ input[type="text"]:focus {
   transition: border 0.3s ease-in;
   box-shadow: none;
 }
-#logo {
-  width: 90px;
-  height: 28px;
+.book-seat {
+  margin-left: 10%;
+  display: inline-block;
 }
 #header-image {
   flex: 1;
@@ -544,7 +544,7 @@ footer .social {
 .under-title {
   font-size: 45px;
   color: #768b48;
-  font-family: Ubuntu-Bold;
+  font-family: FuturaBTBold;
 }
 .sub-title {
   font-weight: 100;
@@ -620,13 +620,22 @@ button[type="submit"] {
     width: 80%;
   }
 
+  button[value="submit"] {
+    width: 80%;
+  }
+
+  #logo {
+    width: 120px;
+    height: 44px;
+  }
+
   .hidden {
     display: none;
   }
   .under,
   .card-u {
     position: relative;
-    width: 70%;
+    width: 90%;
 
     top: 0;
     left: 0;
@@ -696,6 +705,9 @@ button[type="submit"] {
   .under p {
     font-size: 13px;
     line-height: 1.5;
+  }
+  .under-title {
+    font-size: 19px !important;
   }
   .hidden {
     display: none;
@@ -831,4 +843,11 @@ button[type="submit"] {
 @font-face {
   font-family: "Ubuntu-Bold";
   src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+
+/* TT Commons */
+/* Regular */
+@font-face {
+  font-family: "TTCommons-Regular";
+  src: url("../../assests/fonts/TTCommons/TTCommons-Regular.ttf");
 }
