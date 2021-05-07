@@ -4,7 +4,7 @@
 // Phone Number
 
 const firebase = require("firebase");
-require('dotenv').config();
+require("dotenv").config();
 const uuid = require("uuid");
 
 var firebaseConfig = {
@@ -21,21 +21,22 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
-function writeUserData(firstName, lastName, email, phoneNumber) {
+function writeUserData(firstName, lastName, phoneNumber, bookSeat, cb) {
   firebase
     .database()
     .ref("users/" + uuid.v4())
     .set({
       firstName,
       lastName,
-      email,
       phoneNumber,
+      bookSeat,
     })
     .then((res) => {
-      console.log(res, "result");
+      cb(true);
     })
     .catch((err) => {
       console.log(err, "error o");
+      cb(false);
     });
 }
 
@@ -49,6 +50,6 @@ const readUserData = () => {
 };
 
 module.exports = {
-    writeUserData,
-    readUserData
+  writeUserData,
+  readUserData,
 };
