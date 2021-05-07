@@ -66,10 +66,40 @@ $(function () {
 
   $(".image-editor").cropit();
 
-  $("form").submit(function (e) {
+  $("form").submit(async function (e) {
     e.preventDefault();
-    var username = $("#first-name").val();
-    console.log("we don reach oo", username);
+    var firstName = $("#first-name").val();
+    var lastName = $("#last-name").val();
+    var phoneNumber = $("#phone").val();
+    var bookSeat = $("#seat").is(":checked");
+
+    // console.log("about to fetch");
+    await fetch("/send", {
+      method: "post",
+      headers: {
+        Accept: "application/json, text/plain, /",
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        phoneNumber,
+        bookSeat,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log("data", data);
+        if (data.message) {
+          // console.log("successful");
+        } else {
+          alert("Something went wrong. Please refresh and try again");
+          return;
+          // console.log("failed");
+        }
+      });
+    // console.log("fetch resp", resp);
+    // console.log("fetched");
     var testimony = /*$("#testimony").val()*/ "";
     // Move cropped image data to hidden input
     var imageData = $(".image-editor").cropit("export", {
@@ -84,10 +114,10 @@ $(function () {
     // x, y, width, height
     const picData = [78.3, 248.9, 511.7, 516.7];
     // name, y, x
-    const nameData = [`${username}`, 381, 626, testimony];
-    // const nameData = [username + ",", 1295, 685, ministryName];
+    const nameData = [`${firstName}`, 381, 626, testimony];
+    // const nameData = [firstName + ",", 1295, 685, ministryName];
 
-    createDP(username, imageData, picData, nameData, function (url) {
+    createDP(firstName, imageData, picData, nameData, function (url) {
       navigateTo("yourdp", createHTMLForImage(url));
 
       function createHTMLForImage(url) {
@@ -99,7 +129,7 @@ $(function () {
             <div class="img-dp">
               <img id="dp_result" src=${url} title="Your DP"/>
               <br>
-              <a class="download-dp" href="${url}" download="PN21_DP_${username.replace(/\./g, "")}">Download Image</a>
+              <a class="download-dp" href="${url}" download="PN21_DP_${firstName.replace(/\./g, "")}">Download Image</a>
               <br>
             </div>
             
@@ -198,7 +228,7 @@ $(function () {
     };
   }
 
-  function createDP(username, imageUrl, pic, name, cb) {
+  function createDP(firstName, imageUrl, pic, name, cb) {
     var canvas = document.createElement("canvas"),
       ctx = canvas.getContext("2d"),
       imageCount = 2,
