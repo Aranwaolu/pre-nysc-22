@@ -65,9 +65,9 @@
 .about-text {
   margin-right: 90px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .about-text {
-    margin-right: 24px;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 }
@@ -113,6 +113,11 @@ img {
   background-color: #edf8d5;
   text-align: center;
   padding: 106px;
+}
+@media screen and (max-width: 700px) {
+  .dp-gen {
+    padding: 56px;
+  }
 }
 .dp-gen h4 {
   font-size: 48px;
@@ -261,6 +266,13 @@ img {
   font-size: 24px;
   line-height: 25.7px;
   margin: 0 190x;
+}
+@media screen and (max-width: 700px) {
+  .footer-box {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
 }
 .footer-box span {
   font-weight: 300;
