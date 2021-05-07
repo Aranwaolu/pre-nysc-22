@@ -30,4 +30,4 @@ server.on("connection", () => console.log("server is connected"));
 server.listen(PORT, () =>
   console.log(`server is running on http://localhost:${PORT}`)
 );
-readUserData()
+// readUserData()
