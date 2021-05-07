@@ -1,0 +1,279 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.nav-link {
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #373e28;
+  margin-left: 42px;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 116px;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    margin-top: 50px;
+  }
+}
+.heading-primary {
+  font-size: 84px;
+  line-height: 89.96px;
+  font-weight: 700;
+  color: #768b48;
+}
+@media screen and (max-width: 700px) {
+  .heading-primary {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+.heading-secondary {
+  max-width: 568px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #373e28;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.about {
+  display: flex;
+  margin-top: 64px;
+  align-items: center;
+  padding-right: 0 !important;
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    margin-top: 40px;
+    padding-right: 70px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about {
+    padding-right: 24px !important;
+  }
+}
+.about-text {
+  margin-right: 90px;
+}
+@media screen and (max-width: 1024px) {
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+.about-text h3 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68.54px;
+  max-width: 443px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 700px) {
+  .about-text h3 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+.about-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+@media screen and (max-width: 700px) {
+  .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+.about-img {
+  min-width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .about-img {
+    min-width: 100%;
+  }
+}
+.about-img img {
+  margin-bottom: -6px;
+}
+img {
+  width: 100%;
+}
+.dp-gen {
+  background-color: #edf8d5;
+  text-align: center;
+  padding: 106px;
+}
+@media screen and (max-width: 700px) {
+  .dp-gen {
+    padding: 56px;
+  }
+}
+.dp-gen h4 {
+  font-size: 48px;
+  line-height: 51.41px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 700px) {
+  .dp-gen h4 {
+    font-size: 35px;
+  }
+}
+.dp-gen p {
+  max-width: 568px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 26px;
+  color: #373e28;
+}
+@media screen and (max-width: 700px) {
+  .dp-gen p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+.dp-gen a {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 42px;
+  background-color: #f2c94c;
+  border-radius: 104px;
+  text-decoration: none;
+  width: 260px;
+  height: 56px;
+  color: white;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .dp-gen a {
+    width: 80%;
+    font-size: 18px;
+    line-height: 26px;
+    height: 40px;
+  }
+}
+.footnote {
+  margin-top: 161px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 700px) {
+  .footnote {
+    margin-top: 100px;
+  }
+}
+.footnote-box {
+  background-color: #edf8d5;
+  height: 316px;
+  border-radius: 10px;
+  margin: 0 145px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-image: url("../assests/images/footnote-bg.svg");
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .footnote-box {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footnote-box {
+    flex-direction: column;
+    height: 216px;
+  }
+}
+/* .footnote-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+} */
+.footnote-text {
+  color: #768b48;
+  margin-left: 54px;
+  z-index: 1;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .footnote-text {
+    margin-left: 0;
+  }
+}
+.footnote-line {
+  position: absolute;
+  left: -10;
+  bottom: -60px;
+}
+@media screen and (max-width: 700px) {
+  .footnote-line {
+    display: none;
+  }
+}
+.footnote-primary {
+  font-size: 32px;
+  line-height: 34.27px;
+}
+@media screen and (max-width: 700px) {
+  .footnote-primary {
+    font-size: 20px;
+    line-height: 34.27px;
+  }
+}
+.footnote-secondary {
+  font-size: 64px;
+  line-height: 68.54px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .footnote-secondary {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.footnote-img {
+  min-width: 45%;
+  height: 100%;
+  position: relative;
+}
+.footnote-img img {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+.footer-box {
+  border-top: 0.5px solid #283016;
+  padding-top: 32px;
+  padding-bottom: 94px;
+  color: #2e2e2e;
+  text-align: center;
+  font-size: 24px;
+  line-height: 25.7px;
+  margin: 0 190x;
+}
+@media screen and (max-width: 700px) {
+  .footer-box {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+}
+.footer-box span {
+  font-weight: 300;
+}
