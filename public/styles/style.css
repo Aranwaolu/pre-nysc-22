@@ -88,14 +88,22 @@ html {
   font-display: swap;
 }
 
-body, a, span {
+@font-face {
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("../assests/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
+}
+@font-face {
+  font-family: "FuturaBTBold";
+  src: url("../src/fonts/Futura/FuturaBTBold.ttf");
+}
+body {
     font-family: "TT Commons", serif;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "FuturaBTBold", serif;
   color: #768B48;
 }
 
