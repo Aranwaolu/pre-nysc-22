@@ -112,9 +112,9 @@ $(function () {
     button.attr("disabled", "disabled").html("...processing");
 
     // x, y, width, height
-    const picData = [78.3, 248.9, 511.7, 516.7];
+    const picData = [108.5, 220.7, 424.9, 418.9];
     // name, y, x
-    const nameData = [`${firstName}`, 381, 626, testimony];
+    const nameData = [`${firstName}`, 692, 119, testimony];
     // const nameData = [firstName + ",", 1295, 685, ministryName];
 
     createDP(firstName, imageData, picData, nameData, function (url) {
@@ -270,8 +270,8 @@ $(function () {
       //Write user name
       ctx.textBaseline = "top";
       ctx.textAlign = "left";
-      ctx.font = "44px Ubuntu-Bold";
-      ctx.fillStyle = "#ca0808";
+      ctx.font = "68px Thunderlightening_Personal";
+      ctx.fillStyle = "#cc0202";
       var canvasText = name[0];
       ctx.fillText(canvasText, name[2], name[1]);
       // ctx.renderText(name[3], name[2], name[1], 1);

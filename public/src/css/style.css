@@ -555,7 +555,7 @@ footer .social {
   border: dashed 1px;
   border-radius: 3px;
   margin-top: 7px;
-  width: 248px;
+  width: 254px;
   margin-left: 20%;
   height: 250px;
 }
@@ -687,7 +687,7 @@ button[type="submit"] {
   }
   .cropit-preview {
     width: 260px;
-    height: 263px;
+    height: 257px;
     margin-left: 5%;
   }
   .arrow-back {
@@ -717,7 +717,7 @@ button[type="submit"] {
   }
   .cropit-preview {
     width: 225px;
-    height: 227px;
+    height: 222px;
     margin-left: 5%;
   }
   .under p {
@@ -850,4 +850,11 @@ button[type="submit"] {
 @font-face {
   font-family: "TTCommons-Regular";
   src: url("../../assests/fonts/TTCommons/TTCommons-Regular.ttf");
+}
+
+/* Thunderlightening */
+/* Regular */
+@font-face {
+  font-family: "Thunderlightening_Personal";
+  src: url("../fonts/thunderlightning_script/Thunderlightning\ Script\ Personal\ Use.otf");
 }
