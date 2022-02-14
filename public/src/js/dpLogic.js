@@ -26,7 +26,7 @@ $(function () {
         <section class="error">
           <p class="big-note" style="text-align: center;">You have to register first to generate a DP!</p>
           <p class="small-note" style="text-align: center;">
-            Click <a href="https://events.egfm.org/">here</a> to register.
+            Click <a href="#">here</a> to register.
           </p>
         </section>
       `;
@@ -99,7 +99,7 @@ $(function () {
               <div class="img-dp">
                 <img id="dp_result" src=${url} title="Your DP"/>
                 <br>
-                <a class="download-dp" href="${url}" download="PN21_DP_${firstName.replace(/\./g, "")}">Download Image</a>
+                <a class="download-dp" href="${url}" download="PN22_DP_${firstName.replace(/\./g, "")}">Download Image</a>
                 <br>
               </div>
               
@@ -245,7 +245,7 @@ $(function () {
 			//Write user name
 			ctx.textBaseline = "top";
 			ctx.textAlign = "left";
-			ctx.font = "90px FuturaBTBold";
+			ctx.font = "150px Thunderlightening_Personal";
 			ctx.fillStyle = "#1c9235";
 			var canvasText = name[0];
 			ctx.fillText(canvasText, name[2], name[1]);
