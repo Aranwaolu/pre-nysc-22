@@ -26,7 +26,7 @@ $(function () {
       <section class="error">
         <p class="big-note" style="text-align: center;">You have to register first to generate a DP!</p>
         <p class="small-note" style="text-align: center;">
-          Click <a href="https://events.egfm.org/">here</a> to register.
+          Click <a href="#">here</a> to register.
         </p>
       </section>
     `;
