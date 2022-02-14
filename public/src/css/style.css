@@ -11,7 +11,7 @@ body {
 	font-size: 100%;
 	color: #000;
 	color: rgb(0, 0, 0);
-	font-family: "TTCommons-Regular", sans-serif;
+	font-family: 'TTCommons-Regular', sans-serif;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 
 h1 {
 	padding-left: 40px;
-	font-family: "FuturaBTBold";
+	font-family: 'FuturaBTBold';
 }
 /* button */
 .kb-button {
@@ -115,7 +115,7 @@ main {
   padding: 20px 0;
 } */
 .big-note {
-	font-family: "FuturaBTBold";
+	font-family: 'FuturaBTBold';
 	font-size: 110px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -128,7 +128,7 @@ main {
 	margin-bottom: 2%;
 }
 .small-note {
-	font-family: "FuturaBTMedium";
+	font-family: 'FuturaBTMedium';
 	font-size: 25px;
 	font-weight: 500;
 	font-stretch: normal;
@@ -177,8 +177,8 @@ ul li {
 }
 
 ul li.ti:before {
-	font-family: "themify";
-	content: "\e600";
+	font-family: 'themify';
+	content: '\e600';
 	height: 1px;
 	left: 0;
 	position: relative;
@@ -188,7 +188,7 @@ ul li.ti:before {
 	margin-right: 20px;
 }
 
-span[class*="ti-"] {
+span[class*='ti-'] {
 	font-weight: 700;
 }
 
@@ -329,7 +329,7 @@ legend {
 	transition: color 0.3s ease;
 	left: 60px;
 }
-input[type="text"]:focus + .input-field_helper {
+input[type='text']:focus + .input-field_helper {
 	color: #768b48;
 	opacity: 1 !important;
 }
@@ -343,7 +343,7 @@ input:focus::-webkit-input-placeholder {
 input:focus::placeholder {
 	color: transparent;
 }
-input[type="text"]:focus {
+input[type='text']:focus {
 	border-color: #768b48;
 	outline: none;
 	background-color: transparent;
@@ -376,7 +376,7 @@ input[type="text"]:focus {
   background-position: 5px 9px;
 } */
 
-button[value="submit"] {
+button[value='submit'] {
 	box-shadow: 0px 6px 6.5px 0.5px rgba(0, 0, 0, 0.23);
 	background-color: #f2c94c;
 	display: block;
@@ -384,7 +384,7 @@ button[value="submit"] {
 	width: 60%;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
 	color: rgb(248, 223, 169);
 	border: 1px solid transparent !important;
 }
@@ -398,10 +398,19 @@ button[type="submit"]:hover {
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
-	margin: 0 7px;
+	/* margin: 0 7px; */
+
 	width: 94%;
-	padding: 5px;
+	padding: 10px;
 	/* margin: 0 auto; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.ti-camera {
+	margin-right: 10px;
 }
 
 .fileinput-button input {
@@ -494,7 +503,7 @@ img#dp_result {
 	color: #fff;
 }
 .share {
-	font-family: "FuturaBTBold";
+	font-family: 'FuturaBTBold';
 	font-size: 28px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -506,7 +515,7 @@ img#dp_result {
 }
 .social-media-handles {
 	display: flex;
-	font-family: "FuturaBTMedium";
+	font-family: 'FuturaBTMedium';
 	font-size: 20.5px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -574,7 +583,7 @@ input {
 	display: block;
 }
 
-button[type="submit"] {
+button[type='submit'] {
 	margin-top: 10px;
 }
 
@@ -620,7 +629,7 @@ button[type="submit"] {
 		width: 80%;
 	}
 
-	button[value="submit"] {
+	button[value='submit'] {
 		width: 80%;
 	}
 
@@ -681,14 +690,18 @@ button[type="submit"] {
 		width: 80%;
 	}
 
+	.image-editor {
+		margin: 0 auto;
+	}
+
 	.author-cont p,
 	.author-cont ul li a {
 		text-align: center;
 	}
 	.cropit-preview {
-		width: 260px;
-		height: 257px;
-		margin-left: 5%;
+		width: 225px;
+		height: 222px;
+		margin: 10px auto;
 	}
 	.arrow-back {
 		top: 16px;
@@ -715,11 +728,6 @@ button[type="submit"] {
 	.big-note {
 		font-size: 28px !important;
 	}
-	.cropit-preview {
-		width: 225px;
-		height: 222px;
-		margin-left: 5%;
-	}
 	.under p {
 		margin-left: 2%;
 		text-align: center;
@@ -745,25 +753,25 @@ button[type="submit"] {
 	}
 }
 .name {
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 }
 /* Ahimsa */
 /* regular version */
 @font-face {
-	font-family: "AhimsaReg";
-	src: url("../fonts/Ahimsa/Ahimsa\ Regular.ttf");
+	font-family: 'AhimsaReg';
+	src: url('../fonts/Ahimsa/Ahimsa\ Regular.ttf');
 	font-weight: normal;
 }
 /* medium version */
 @font-face {
-	font-family: "AhimsaMed";
-	src: url("../fonts/Ahimsa/Ahimsa\ Medium.ttf");
+	font-family: 'AhimsaMed';
+	src: url('../fonts/Ahimsa/Ahimsa\ Medium.ttf');
 	font-weight: 500;
 }
 /* bold version */
 @font-face {
-	font-family: "Ahimsa";
-	src: url("../fonts/Ahimsa/Ahimsa_Bold.ttf");
+	font-family: 'Ahimsa';
+	src: url('../fonts/Ahimsa/Ahimsa_Bold.ttf');
 	font-weight: bold;
 }
 
@@ -777,91 +785,91 @@ button[type="submit"] {
 /* Muli */
 /* Bold */
 @font-face {
-	font-family: "Muli-ExtraBold";
-	src: url("../fonts/Muli/Muli-ExtraBold.ttf");
+	font-family: 'Muli-ExtraBold';
+	src: url('../fonts/Muli/Muli-ExtraBold.ttf');
 }
 /* light Italic */
 @font-face {
-	font-family: "Muli-LightItalic";
-	src: url("../fonts/Muli/Muli-LightItalic.ttf");
+	font-family: 'Muli-LightItalic';
+	src: url('../fonts/Muli/Muli-LightItalic.ttf');
 }
 
 /* Muli */
 /* Bold */
 @font-face {
-	font-family: "Muli-ExtraBold";
-	src: url("../fonts/Muli/Muli-ExtraBold.ttf");
+	font-family: 'Muli-ExtraBold';
+	src: url('../fonts/Muli/Muli-ExtraBold.ttf');
 }
 /* light Italic */
 @font-face {
-	font-family: "Muli-LightItalic";
-	src: url("../fonts/Muli/Muli-LightItalic.ttf");
+	font-family: 'Muli-LightItalic';
+	src: url('../fonts/Muli/Muli-LightItalic.ttf');
 }
 
 /* Futura */
 /* Bold */
 @font-face {
-	font-family: "FuturaBTBold";
-	src: url("../fonts/Futura/FuturaBTBold.ttf");
+	font-family: 'FuturaBTBold';
+	src: url('../fonts/Futura/FuturaBTBold.ttf');
 }
 /* regular */
 @font-face {
-	font-family: "FuturaBTMedium";
-	src: url("../fonts/Futura/FuturaBTMedium.ttf");
+	font-family: 'FuturaBTMedium';
+	src: url('../fonts/Futura/FuturaBTMedium.ttf');
 }
 
 /* SmoothStone */
 /* Regular */
 @font-face {
-	font-family: "SmoothStone-Regular";
-	src: url("../fonts/SmoothStone/SmoothStone-Regular.ttf");
+	font-family: 'SmoothStone-Regular';
+	src: url('../fonts/SmoothStone/SmoothStone-Regular.ttf');
 }
 
 /* Auto */
 /* Regular */
 @font-face {
-	font-family: "Autography";
-	src: url("../fonts/autography/Autography.otf");
+	font-family: 'Autography';
+	src: url('../fonts/autography/Autography.otf');
 }
 
 /* poppins */
 /* Regular */
 @font-face {
-	font-family: "Poppins-SemiBold";
-	src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+	font-family: 'Poppins-SemiBold';
+	src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
 }
 
 /* Monument Extended */
 /* Ultra bold */
 @font-face {
-	font-family: "MonumentExtended-Ultrabold";
-	src: url("../../assests/fonts/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
+	font-family: 'MonumentExtended-Ultrabold';
+	src: url('../../assests/fonts/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf');
 }
 
 /* Ubuntu */
 /* bold */
 @font-face {
-	font-family: "Ubuntu-Bold";
-	src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+	font-family: 'Ubuntu-Bold';
+	src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
 
 /* TT Commons */
 /* Regular */
 @font-face {
-	font-family: "TTCommons-Regular";
-	src: url("../../assests/fonts/TTCommons/TTCommons-Regular.ttf");
+	font-family: 'TTCommons-Regular';
+	src: url('../../assests/fonts/TTCommons/TTCommons-Regular.ttf');
 }
 
 /* Thunderlightening */
 /* Regular */
 @font-face {
-	font-family: "Thunderlightening_Personal";
-	src: url("../fonts/thunderlightning_script/Thunderlightning\ Script\ Personal\ Use.otf");
+	font-family: 'Thunderlightening_Personal';
+	src: url('../fonts/thunderlightning_script/Thunderlightning\ Script\ Personal\ Use.otf');
 }
 
 /* Thunderlightening */
 /* Regular */
 @font-face {
-	font-family: "Beyond-mountains";
-	src: url("../fonts/beyond_the_mountains/beyond_the_mountains.ttf");
+	font-family: 'Beyond-mountains';
+	src: url('../fonts/beyond_the_mountains/beyond_the_mountains.ttf');
 }
