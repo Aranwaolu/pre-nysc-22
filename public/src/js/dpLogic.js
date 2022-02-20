@@ -82,7 +82,7 @@ $(function () {
 		button.attr("disabled", "disabled").html("...processing");
 
 		// x, y, width, height
-		const picData = [540, 266, 360, 383];
+		const picData = [554, 266, 360, 383];
 		// name, y, x
 		const nameData = [`- ${firstName}`, 649, 98, testimony];
 		// const nameData = [firstName + ",", 1295, 685, ministryName];
