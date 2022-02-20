@@ -82,9 +82,9 @@ $(function () {
 		button.attr("disabled", "disabled").html("...processing");
 
 		// x, y, width, height
-		const picData = [223, 377, 650, 650];
+		const picData = [540, 266, 360, 383];
 		// name, y, x
-		const nameData = [`${firstName}`, 600, 950, testimony];
+		const nameData = [`- ${firstName}`, 649, 98, testimony];
 		// const nameData = [firstName + ",", 1295, 685, ministryName];
 
 		createDP(firstName, imageData, picData, nameData, function (url) {
@@ -245,7 +245,7 @@ $(function () {
 			//Write user name
 			ctx.textBaseline = "top";
 			ctx.textAlign = "left";
-			ctx.font = "150px Thunderlightening_Personal";
+			ctx.font = "90px Thunderlightening_Personal";
 			ctx.fillStyle = "#1c9235";
 			var canvasText = name[0];
 			ctx.fillText(canvasText, name[2], name[1]);
