@@ -84,7 +84,7 @@ $(function () {
 		// x, y, width, height
 		const picData = [554, 266, 360, 383];
 		// name, y, x
-		const nameData = [`- ${firstName}`, 649, 98, testimony];
+		const nameData = [`- ${firstName}`, 609, 116, testimony];
 		// const nameData = [firstName + ",", 1295, 685, ministryName];
 
 		createDP(firstName, imageData, picData, nameData, function (url) {
